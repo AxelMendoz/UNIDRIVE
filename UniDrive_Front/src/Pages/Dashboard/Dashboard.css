@@ -1,0 +1,185 @@
+/* Estilos generales */
+.dashboard {
+  display: flex; /* Define un layout flexbox para que los hijos (sidebar y contenido principal) estén en línea. */
+  height: 100vh; /* Hace que el contenedor ocupe toda la altura de la ventana del navegador. */
+  font-family: 'Times New Roman', Times, serif; /* Aplica la fuente Arial o, si no está disponible, una fuente sans-serif. */
+  color: #333; /* Define el color del texto en un tono gris oscuro. */
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px; /* Establece el ancho fijo de la barra lateral. */
+  background-color: #4F75FF; /* Fondo en un tono azul oscuro. */
+  color: #ecf0f1; /* Texto en un tono claro para buen contraste. */
+  padding: 20px; /* Añade espacio interior de 20px en todos los lados. */
+  display: flex; /* Utiliza flexbox para organizar los elementos dentro de la barra lateral. */
+  flex-direction: column; /* Alinea los elementos en una columna vertical. */
+  align-items: center; /* Centra los elementos horizontalmente. */
+}
+
+.profile-section {
+  text-align: center; /* Centra el texto e imágenes de la sección del perfil. */
+}
+
+.profile-img {
+  width: 80px; /* Establece el ancho fijo de la imagen del perfil. */
+  height: 80px; /* Establece la altura fija para que sea cuadrada. */
+  border-radius: 15px; /* Redondea ligeramente las esquinas de la imagen. */
+  margin-bottom: 10px; /* Añade un espacio inferior de 10px entre la imagen y el siguiente elemento. */
+  object-fit: cover; /* Asegura que la imagen se ajuste al contenedor sin distorsión. */
+}
+
+.profile-name {
+  margin: 10px 0; /* Añade espacio superior e inferior al nombre del perfil. */
+}
+
+.profile-button {
+  background-color: #00CCDD; /* Fondo verde azulado brillante. */
+  border: none; /* Elimina el borde predeterminado del botón. */
+  padding: 10px; /* Añade espacio interno al botón. */
+  color: white; /* Texto blanco para contraste. */
+  border-radius: 5px; /* Redondea ligeramente las esquinas del botón. */
+  cursor: pointer; /* Cambia el cursor a "mano" cuando pasas sobre el botón. */
+}
+
+.profile-button:hover {
+  background-color: #1abc9c; /* Cambia el color del fondo cuando el botón se pasa por encima. */
+}
+
+.nav {
+  margin-top: 20px; /* Añade un espacio superior de 20px antes de los enlaces. */
+  width: 100%; /* Asegura que la barra de navegación ocupe todo el ancho del sidebar. */
+}
+
+.nav-link {
+  display: block; /* Cada enlace ocupa toda la línea para que sea más fácil hacer clic. */
+  padding: 10px 15px; /* Añade espacio interno alrededor del texto del enlace. */
+  color: #ecf0f1; /* Color claro para contraste sobre el fondo oscuro. */
+  text-decoration: none; /* Elimina el subrayado de los enlaces. */
+  border-radius: 5px; /* Redondea las esquinas del enlace. */
+  margin-bottom: 5px; /* Añade un pequeño espacio entre los enlaces. */
+}
+
+.nav-link:hover {
+  background-color: #ffffff; /* Cambia el fondo del enlace cuando se pasa por encima. */
+}
+
+/* Contenido principal */
+.main-content {
+  flex: 1; /* Toma el espacio restante disponible en el layout flex. */
+  background-color: #091a38; /* Fondo gris claro para contraste con el sidebar. */
+  padding: 20px; /* Añade espacio interno al contenido principal. */
+}
+
+.main-header {
+  background-color: #4F75FF; /* Fondo azul brillante. */
+  color: white; /* Texto blanco para contraste. */
+  padding: 20px; /* Añade espacio interno al encabezado. */
+  border-radius: 5px; /* Redondea ligeramente las esquinas del encabezado. */
+  margin-bottom: 20px; /* Añade un espacio inferior antes de las siguientes secciones. */
+}
+
+.dashboard-section {
+  background-color: white; /* Fondo blanco para las secciones del dashboard. */
+  padding: 20px; /* Añade espacio interno a la sección. */
+  border-radius: 5px; /* Redondea ligeramente las esquinas del contenedor. */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra suave para destacar la sección. */
+}
+
+.section-title {
+  margin-bottom: 15px; /* Añade un espacio inferior debajo del título de la sección. */
+}
+
+.projects {
+  display: flex; /* Utiliza flexbox para alinear las tarjetas de proyectos en una fila. */
+  gap: 10px; /* Añade un espacio uniforme entre las tarjetas de proyecto. */
+}
+
+.project-card {
+  background-color: #ecf0f1; /* Fondo gris claro para las tarjetas de proyectos. */
+  padding: 15px; /* Añade espacio interno a las tarjetas. */
+  border-radius: 5px; /* Redondea ligeramente las esquinas de las tarjetas. */
+  flex: 1; /* Hace que todas las tarjetas tengan el mismo tamaño en la fila. */
+  text-align: center; /* Centra el texto dentro de cada tarjeta. */
+}
+
+.project-card h3 {
+  margin: 0 0 10px; /* Elimina el margen superior y añade un margen inferior entre el título y el texto. */
+}
+
+.project-card p {
+  margin: 0; /* Elimina márgenes alrededor del párrafo. */
+  font-size: 0.9em; /* Reduce el tamaño del texto para que sea más sutil. */
+  color: #7f8c8d; /* Color gris para el texto complementario. */
+}
+
+/* Sección de cerrar sesión */
+.logout-section {
+  margin-top: auto; /* Empuja el botón hacia abajo */
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+}
+
+.logout-button {
+  background-color: #00CCDD; /* Rojo para el botón de cerrar sesión */
+  border: none; /* Elimina el borde predeterminado */
+  padding: 10px 15px; /* Añade espacio interno al botón */
+  color: white; /* Texto blanco */
+  border-radius: 5px; /* Redondea ligeramente las esquinas */
+  cursor: pointer; /* Cambia el cursor a "mano" cuando pasas sobre el botón */
+  width: 100%; /* Hace que el botón ocupe todo el ancho */
+}
+
+.logout-button:hover {
+  background-color: #e74c3c !important; /* Cambia a un tono más oscuro cuando se pasa el ratón */
+}
+
+/* Estilos para el cuadro de confirmación */
+.logout-confirmation-overlay {
+  position: fixed; /* Fija el cuadro en la pantalla */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro translúcido */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Asegura que esté encima de todo */
+}
+
+.logout-confirmation {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+.logout-confirmation p {
+  margin-bottom: 20px;
+}
+
+.confirm-button,
+.cancel-button {
+  background-color: #00ccdd;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.confirm-button:hover,
+.cancel-button:hover {
+  background-color: #1abc9c;
+}
+
+.cancel-button {
+  background-color: #e74c3c;
+}
+
+.cancel-button:hover {
+  background-color: #c0392b;
+}

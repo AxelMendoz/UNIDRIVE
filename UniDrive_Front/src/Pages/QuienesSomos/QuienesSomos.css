@@ -1,0 +1,126 @@
+/* General styles */
+.about-us-container {
+    font-family: 'Times New Roman', Times, serif; /* Establece la fuente para todo el contenido */
+    background-color: #091a38; /* Fondo principal gris oscuro */
+    color: white; /* Color de texto blanco */
+    padding: 40px;
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+  }
+  
+  /* Header Section */
+  .about-us-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .about-us-header h1 {
+    font-size: 4rem;
+    color: #6439FF;
+    text-shadow: 0 0 10px #6439FF, 0 0 20px #8A2BE2;
+    animation: optimized-glow 3s ease-in-out infinite;
+  }
+  
+  @keyframes optimized-glow {
+    0%, 100% {
+      text-shadow: 0 0 10px #6439FF, 0 0 20px #8A2BE2;
+    }
+    50% {
+      text-shadow: 0 0 15px #8A2BE2, 0 0 30px #B084FF;
+    }
+  }
+  
+  .about-us-header p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    margin-top: 10px;
+    max-width: 800px; /* Limita el ancho del párrafo */
+    text-align: justify; /* Alinea el texto de manera justificada */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Section Block */
+  .about-us-section-block {
+    background-color: #1c1c1c; /* Fondo oscuro para cada sección */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px;
+    margin: 30px 0;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar el bloque */
+  }
+  
+  /* Visión, Propósito, etc. */
+  .about-us-section {
+    margin-bottom: 20px; /* Espacio entre secciones dentro del bloque */
+  }
+  
+  .about-us-section h2 {
+    text-align: center;
+    margin: 25px;
+    color: #00aaff; /* Título en azul */
+    font-size: 2.5rem; /* Tamaño del título */
+  }
+  
+  .about-us-section p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    text-align: justify; /* Alinea el texto de manera justificada */
+    margin-bottom: 20px;
+  }
+  
+  /* Links de Términos y Condiciones y Política de Privacidad */
+  .about-us-section a {
+    color: #00aaff;
+    text-decoration: none;
+  }
+  
+  .about-us-section a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Contact Section */
+  .about-us-section-contact {
+    text-align: center;
+  }
+  
+  .about-us-section-contact p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    text-align: justify;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .about-us-section-contact a {
+    color: #00aaff;
+    text-decoration: none;
+  }
+  
+  .about-us-section-contact a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Button in the Call to Action */
+  .about-us-cta button {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+  
+  .about-us-cta button:hover {
+    background-color: #0088cc;
+  }
+  
+  

@@ -1,0 +1,140 @@
+/* Contenedor principal */
+.ride-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Sección de búsqueda */
+.search-section {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-section h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #333;
+}
+
+.search-section button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #0078ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-section button:hover {
+  background-color: #005bb5;
+}
+
+.search-section p {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Sección de resultados */
+.results-section {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.results-section h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.ride-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.ride-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.ride-card p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.ride-card strong {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Detalles del ride */
+.ride-details {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.ride-details h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.ride-details p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Mapa */
+.leaflet-container {
+  width: 100%;
+  height: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Botones */
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0078ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+/* Texto para resultados vacíos */
+.results-section p {
+  text-align: center;
+  font-size: 16px;
+  color: #999;
+  margin-top: 20px;
+}

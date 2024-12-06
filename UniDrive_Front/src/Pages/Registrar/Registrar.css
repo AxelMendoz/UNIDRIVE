@@ -1,0 +1,129 @@
+/* Establecer el fondo con gradiente */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(45deg, #073ae1, #18d2f3, #2c8ab6);
+  background-size: 300% 300%;
+  animation: gradientFade 15s infinite;
+}
+
+/* Animación del fondo */
+@keyframes gradientFade {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Contenedor principal */
+.registration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Contenedor del contenido */
+.registration-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 10px;
+  overflow: hidden; /* Asegura bordes redondeados */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen a la izquierda */
+.image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff; /* Fondo blanco detrás de la imagen */
+}
+
+.registration-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Hace que la imagen cubra el espacio disponible */
+}
+
+/* Formulario de registro */
+.registration-form {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Encabezado del formulario */
+.form-header {
+  text-align: center;
+  font-size: 1.7rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Grupos de campos */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Botón de envío */
+.submit-btn {
+  padding: 10px 16px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover del botón */
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .registration-content {
+    flex-direction: column; /* Apilar imagen y formulario */
+  }
+
+  .image-container,
+  .registration-form {
+    width: 100%;
+    height: auto;
+  }
+
+  .registration-image {
+    height: 200px; /* Tamaño reducido para pantallas pequeñas */
+  }
+}
+
+

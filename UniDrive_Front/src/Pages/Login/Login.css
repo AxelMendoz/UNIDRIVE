@@ -1,0 +1,155 @@
+/* Contenedor con fondo de gradiente */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family:'Times New Roman', Times, serif;
+  padding: 20px;
+  background: linear-gradient(45deg, #073ae1, #18d2f3, #2c8ab6); /* Gradiente permanente */
+  background-size: 300% 300%;
+  animation: gradientFade 10s infinite; /* Animación continua */
+  position: relative; /* Necesario para el botón flotante */
+  margin-top: -20px
+}
+
+/* Animación de desvanecido suave (manteniendo los colores) */
+@keyframes gradientFade {
+  0% {
+    background: linear-gradient(45deg, #073ae1, #18d2f3, #2c8ab6);
+    background-position: 0% 50%;
+  }
+  50% {
+    background: linear-gradient(45deg, #073ae1, #18d2f3, #2c8ab6);
+    background-position: 100% 50%;
+  }
+  100% {
+    background: linear-gradient(45deg, #073ae1, #18d2f3, #2c8ab6);
+    background-position: 0% 50%;
+  }
+}
+
+/* Contenedor para el formulario y la imagen */
+.login-content {
+  display: flex;
+  gap: 30px;
+  background: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 900px;
+  width: 100%;
+  align-items: center;
+}
+
+/* Imagen al lado del formulario */
+.login-image {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Formulario de inicio de sesión */
+.login-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-form h2 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: -10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.login-button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+/* Vista previa del correo */
+.preview-email {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+/* Botón de regreso al inicio fuera del formulario */
+.back-to-home {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10; /* Asegura que el botón esté sobre el contenido */
+}
+
+.back-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+  .login-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .login-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
